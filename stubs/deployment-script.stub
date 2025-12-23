@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Deployments;
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
+use Roshify\LaravelDeployments\Deployment;
+
+/**
+ * Deployment: {{ class }}
+ * Created: {{ date }}
+ *
+ * Purpose:
+ * - Describe what this deployment does
+ * - Mention affected tables / features
+ *
+ * Notes:
+ * - This deployment is idempotent
+ * - Uses safe writes via $this->write()
+ */
+class {{ class }} extends Deployment
+{
+    /**
+     * Human-readable summary shown before execution.
+     */
+    public function summary(): array
+    {
+        return [
+            '{{ class }} Deployment Summary'
+        ];
+    }
+
+    /**
+     * Deployment logic.
+     *
+     * IMPORTANT:
+     * - Use $this->write() for all DB/state mutations
+     * - Reads are allowed directly
+     */
+    protected function handle(): void
+    {
+        /**
+         * Example 1: Run a seeder
+         */
+        // $this->write(
+        //     fn () => Artisan::call('db:seed', [
+        //         '--class' => 'Database\\Seeders\\ExampleSeeder',
+        //         '--force' => true,
+        //     ]),
+        //     'Run ExampleSeeder'
+        // );
+
+        /**
+         * Example 2: Update records
+         */
+        // $this->write(
+        //     function () {
+        //         DB::table('users')
+        //             ->whereNull('email_verified_at')
+        //             ->update(['email_verified_at' => now()]);
+        //     },
+        //     'Backfill email_verified_at for users'
+        // );
+    }
+
+    /**
+     * Rollback logic (optional).
+     */
+    protected function rollback(): void
+    {
+        // Implement rollback logic here
+        // throw new \RuntimeException('Rollback not implemented');
+    }
+}
