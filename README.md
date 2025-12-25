@@ -5,7 +5,7 @@ A simple, migration-like deployment script manager for Laravel applications.
 ## Installation
 
 ```bash
-composer require Roshify/laravel-deployments
+composer require sthira-labs/laravel-deployments
 ```
 
 ## Setup
@@ -73,7 +73,7 @@ php artisan deploy:rollback --force
 
 namespace App\Deployments;
 
-use Roshify\LaravelDeployments\Deployment;
+use SthiraLabs\LaravelDeployments\Deployment;
 use Illuminate\Support\Facades\DB;
 
 class PatAutomation extends Deployment
@@ -112,7 +112,7 @@ Edit `config/deployments.php` to customize:
 
 ## Maintainer
 
-Roshan Poojary (GitHub: @roshify)
+Roshan Poojary (GitHub: @sthira-labs)
 
 ## License
 

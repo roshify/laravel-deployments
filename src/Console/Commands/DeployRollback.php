@@ -1,6 +1,6 @@
 <?php
 
-namespace Roshify\LaravelDeployments\Console\Commands;
+namespace SthiraLabs\LaravelDeployments\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;

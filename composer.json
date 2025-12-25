@@ -1,5 +1,5 @@
 {
-  "name": "roshify/laravel-deployments",
+  "name": "sthira-labs/laravel-deployments",
   "description": "A simple, migration-like deployment script manager for Laravel applications.",
   "type": "library",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Roshify\\LaravelDeployments\\": "src/"
+      "SthiraLabs\\LaravelDeployments\\": "src/"
     }
   },
   "authors": [
@@ -31,7 +31,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Roshify\\LaravelDeployments\\DeploymentServiceProvider"
+        "SthiraLabs\\LaravelDeployments\\DeploymentServiceProvider"
       ]
     }
   },

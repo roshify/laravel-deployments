@@ -4,7 +4,7 @@ namespace App\Deployments;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Artisan;
-use Roshify\LaravelDeployments\Deployment;
+use SthiraLabs\LaravelDeployments\Deployment;
 
 /**
  * Deployment: {{ class }}

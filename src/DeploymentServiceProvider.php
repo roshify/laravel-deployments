@@ -1,12 +1,12 @@
 <?php
 
-namespace Roshify\LaravelDeployments;
+namespace SthiraLabs\LaravelDeployments;
 
 use Illuminate\Support\ServiceProvider;
-use Roshify\LaravelDeployments\Console\Commands\DeployRun;
-use Roshify\LaravelDeployments\Console\Commands\DeployStatus;
-use Roshify\LaravelDeployments\Console\Commands\DeployRollback;
-use Roshify\LaravelDeployments\Console\Commands\MakeDeployment;
+use SthiraLabs\LaravelDeployments\Console\Commands\DeployRun;
+use SthiraLabs\LaravelDeployments\Console\Commands\DeployStatus;
+use SthiraLabs\LaravelDeployments\Console\Commands\DeployRollback;
+use SthiraLabs\LaravelDeployments\Console\Commands\MakeDeployment;
 
 class DeploymentServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Roshify\LaravelDeployments;
+namespace SthiraLabs\LaravelDeployments;
 
 use Illuminate\Support\Facades\Log;
 
